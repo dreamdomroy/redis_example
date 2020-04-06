@@ -1,4 +1,4 @@
-### Windows
+### 在Windows上借助Linux使用redis
 在執行redis並指派工作給worker時，需要使用os.fork()這個函式來執行一個新的程序。
 遺憾的是，在Windows中並無相對應的方法給Python去呼叫，勉強能借助subprocess模組或multiprocessing模組來模擬，但使用起來相當麻煩。
 有鑑於日後大部分用於部屬網路應用的伺服器都是使用Linux，不如就直接在Windows上安裝一個Linux子系統來操作吧！
